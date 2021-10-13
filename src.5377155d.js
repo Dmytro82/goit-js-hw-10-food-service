@@ -11,8 +11,8 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"TAw8":[function(require,module,exports) {
 "use strict";var e=u(require("../templates/menuTemplate.hbs")),t=u(require("../menu.json"));function u(e){return e&&e.__esModule?e:{default:e}}const n=document.querySelector(".js-menu");n.insertAdjacentHTML("beforeend",(0,e.default)(t.default));
 },{"../templates/menuTemplate.hbs":"KVUM","../menu.json":"mA8c"}],"qwQt":[function(require,module,exports) {
-const e=document.querySelector("#theme-switch-toggle"),t=document.querySelector("body"),s={LIGHT:"light-theme",DARK:"dark-theme"};function c(){t.classList.contains(s.DARK)?a():o()}function a(){t.classList.add(s.LIGHT),t.classList.remove(s.DARK),localStorage.setItem("theme",`${s.LIGHT}`)}function o(){t.classList.add(s.DARK),t.classList.remove(s.LIGHT),localStorage.setItem("theme",`${s.DARK}`)}localStorage.getItem("theme")===s.DARK&&(t.classList.add(s.DARK),e.setAttribute("checked","true")),e.addEventListener("change",c);
+const e=document.querySelector("#theme-switch-toggle"),t=document.querySelector("body"),c={LIGHT:"light-theme",DARK:"dark-theme"};function s(){t.classList.contains(c.DARK)?n():o()}function n(){t.classList.add(c.LIGHT),t.classList.remove(c.DARK),localStorage.setItem("theme",`${c.LIGHT}`)}function o(){t.classList.add(c.DARK),t.classList.remove(c.LIGHT),localStorage.setItem("theme",`${c.DARK}`)}localStorage.getItem("theme")===c.DARK&&(t.classList.add(c.DARK),e.setAttribute("checked","true")),e.addEventListener("change",s);const i=document.querySelector("#icon-light"),a=document.querySelector("#icon-dark");function l(){t.classList.contains(c.DARK)&&n()}function d(){t.classList.contains(c.LIGHT)&&o()}i.addEventListener("click",l),a.addEventListener("click",d);
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menuMarkup.js"),require("./js/theme.js");
 },{"./sass/main.scss":"clu1","./js/menuMarkup.js":"TAw8","./js/theme.js":"qwQt"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.5d10191b.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.5377155d.js.map
