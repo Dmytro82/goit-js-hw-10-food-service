@@ -37,3 +37,22 @@ function themeDark() {
   bodyRefs.classList.remove(Theme.LIGHT);
   localStorage.setItem('theme', `${Theme.DARK}`);
 }
+
+// icon
+const iconLightRefs = document.querySelector('#icon-light');
+const iconDarkRefs = document.querySelector('#icon-dark');
+
+iconLightRefs.addEventListener('click', onThemeClickLight);
+iconDarkRefs.addEventListener('click', onThemeClickDark);
+
+function onThemeClickLight() {
+  if (bodyRefs.classList.contains(Theme.DARK)) {
+    themeLight();
+  }
+}
+
+function onThemeClickDark() {
+  if (bodyRefs.classList.contains(Theme.LIGHT)) {
+    themeDark();
+  }
+}
